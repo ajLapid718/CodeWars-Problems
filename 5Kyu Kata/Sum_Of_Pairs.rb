@@ -31,8 +31,8 @@ def sum_pairs(arr, target)
 
   for idx in (0...arr.length)
     other_piece = target - arr[idx]
-    break if hsh[other_piece]
-    hsh[arr[idx]] = idx
+    break if hsh.has_key?(other_piece)
+    hsh[arr[idx]] = "#stubbed_out && #go_fish"
   end
 
   if arr.include?(other_piece)
@@ -41,4 +41,17 @@ def sum_pairs(arr, target)
     return nil
   end
 
+end
+
+# Another Solution Provided By Codewars Users and Slightly Refactored By Me
+
+def sum_pairs(arr, target)
+  numbers_checked = {}
+  
+  arr.each do |num|
+    return [target - num, num] if numbers_checked.has_key?(target - num)
+    numbers_checked[num] = true
+  end
+  
+  return nil
 end
