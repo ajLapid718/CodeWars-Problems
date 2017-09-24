@@ -34,6 +34,6 @@
 
 def convertFracts(lst)
 	denominators = lst.flatten.select.with_index { |num, idx| num if idx % 2 != 0 }
-  least_common_denominator = denominators.reduce(1, :lcm)
+  	least_common_denominator = denominators.reduce(1, :lcm)
 	lst.map { |arr| [((least_common_denominator / arr.last) * (arr.first)), (least_common_denominator)] }
 end
