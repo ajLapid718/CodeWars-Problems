@@ -49,8 +49,9 @@ def sum_pairs(arr, target)
   numbers_checked = {}
   
   arr.each do |num|
-    return [target - num, num] if numbers_checked.has_key?(target - num)
-    numbers_checked[num] = true
+    other_part_of_pair = (target - num)
+    return [other_part_of_pair, num] if numbers_checked.has_key?(other_part_of_pair)
+    numbers_checked[num] = "This number is not the other part of the pair."
   end
   
   return nil
