@@ -50,8 +50,11 @@ def sum_pairs(arr, target)
   
   arr.each do |num|
     other_part_of_pair = (target - num)
-    return [other_part_of_pair, num] if numbers_checked.has_key?(other_part_of_pair)
-    numbers_checked[num] = "This number is not the other part of the pair."
+    if numbers_checked.has_key?(other_part_of_pair)
+       return [other_part_of_pair, num]
+    else 
+      numbers_checked[num] = "This value is a placeholder. We only need the key."
+    end
   end
   
   return nil
