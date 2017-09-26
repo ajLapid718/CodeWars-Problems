@@ -28,7 +28,7 @@ def helper(n)
   n *= helper(n-1)
 end
 
-# Alternativley
+# Alternatively
 
 def reverse_factorial(num)
   product = 1
