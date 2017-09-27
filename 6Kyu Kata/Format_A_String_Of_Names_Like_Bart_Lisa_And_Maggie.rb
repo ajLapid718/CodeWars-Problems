@@ -31,8 +31,6 @@ def list(names)
     return people.first
   when 2
     return "#{people.first} & #{people.last}"
-  when 3
-    return "#{people.first}, #{people[1]} & #{people.last}"
   else
     return "#{people[0..people.count-2].join(", ")} & #{people.last}"
   end
