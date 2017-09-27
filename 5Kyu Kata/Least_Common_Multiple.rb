@@ -4,7 +4,7 @@ def lcm(*args)
   args.reduce(&:lcm)
 end
 
-# Without Ruby Magic and probably what the kata was aiming to test
+## Without Ruby Magic and probably what the kata was aiming to test
 
 def lcm(*args)
   return 0 if args.include?(0)
