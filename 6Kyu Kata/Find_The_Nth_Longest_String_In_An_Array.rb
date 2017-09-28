@@ -8,7 +8,7 @@ def longest(array,n)
   hsh.sort { |a,b| (a.last <=> b.last) == 0 ? (array.index(a) <=> array.index(b)) : (b.last <=> a.last) }[n-1].first
 end
 
-# Another solution provided by Codewars users
+# Another solution provided by Codewars users; it shows that I didn't necessarily have to generate a hash
 
 def longest(arr,n)
   arr.sort_by { |word| [-word.length, arr.index(word)] }[n-1]
