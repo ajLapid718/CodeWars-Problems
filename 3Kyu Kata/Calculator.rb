@@ -13,7 +13,7 @@ class Calculator
   end
 end
 
-# Better solution
+# Better solution provided by another Codewars user
 
 class Calculator
   def evaluate(string)
@@ -26,7 +26,7 @@ class Calculator
   end
 end
 
-# Clever solution
+# Clever solution provided by another Codewars user
 
 require 'net/http'
 
