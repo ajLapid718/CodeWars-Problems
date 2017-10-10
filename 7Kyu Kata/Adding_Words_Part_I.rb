@@ -21,6 +21,7 @@
 # Output - Word representation of the result of the addition. Should be in lower case
 
 # My solution (I really wanted to invoke #zip for the first time)
+
 class Arith
   NUMBERS = (0..20).to_a
   NUMBERS_IN_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
