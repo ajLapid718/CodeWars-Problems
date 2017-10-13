@@ -30,4 +30,4 @@ Happy coding!
 
 ## Sample Tests
 
-![Sample Tests](/Misc/01-Example-Tests.JPG)
+![Sample Tests](/Misc/Screenshot.png)
