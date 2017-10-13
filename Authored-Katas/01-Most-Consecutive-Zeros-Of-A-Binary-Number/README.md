@@ -30,7 +30,7 @@ Happy coding!
 
 # Sample Tests
 
-![Sample Tests](/Misc/01-Example_Tests.png)
+![Sample Tests](/Misc/01-Example_Tests.PNG)
 
 - [x] Supports multiple programming languages
 - [x] Contains more than one-hundred test cases
