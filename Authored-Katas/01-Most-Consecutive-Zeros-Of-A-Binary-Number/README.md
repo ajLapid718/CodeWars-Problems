@@ -1,6 +1,6 @@
 Link: https://www.codewars.com/kata/most-consecutive-zeros-of-a-binary-number
 
-Description
+# Description
 
 Given a string (`str`) containing a base-10 integer between `0` and `10000`, convert the integer to its binary representation. At that point, obtain a count of the maximum amount of consecutive 0s. From there, return the count in written form with a capital letter.
 
