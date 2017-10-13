@@ -32,9 +32,9 @@ Happy coding!
 
 ![Sample Tests](/Misc/Screenshot.png)
 
-[x] Supports multiple programming languages
-[x] Contains more than one-hundred test cases
-[x] Provides example test cases for the user
-[x] Randomizes test cases per user submission
-[x] Uses `Test.assert_equals(actual_value, expected_value)` instead of `Test.expect()`
-[x] Uses `Test.describe()`
+- [x] Supports multiple programming languages
+- [x] Contains more than one-hundred test cases
+- [x] Provides example test cases for the user
+- [x] Randomizes test cases per user submission
+- [x] Uses `Test.assert_equals(actual_value, expected_value)` instead of `Test.expect()`
+- [x] Uses `Test.describe()`
