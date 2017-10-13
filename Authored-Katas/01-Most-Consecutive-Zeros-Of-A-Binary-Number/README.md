@@ -27,3 +27,7 @@ max_consec_zeros("777")
 max_consec_zeros("777") => "Four"
 ```
 Happy coding!
+
+## Sample Tests
+
+![Sample Tests](/Misc/01-Example-Tests.JPG)
