@@ -28,7 +28,7 @@ Examples:
 
 ```
 A: blackjack_outcome(1010, 1011) => "Classic Blackjack!"
-B: blackjack_outcome(1111, 110) => "Remixed Blackjack!"
+B: blackjack_outcome(110, 1111) => "Remixed Blackjack!"
 C: blackjack_outcome(1010, 1011, 1001101) => "Super Blackjack!"
 D: blackjack_outcome(1010, 1011, 1000000) => "Bust!"
 E: blackjack_outcome(111, 111, 111) => "21!"
@@ -37,7 +37,7 @@ G: blackjack_outcome(101, 101, 11) => "Unlucky!"
 H: blackjack_outcome(1010, 111) => "Unlucky!"
 
 A: 1010 and 1011 => 10 + 11 == 21
-B: 1111 and 110 is equivalent to 15 + 6 == 21
+B: 110 and 1111 is equivalent to 6 + 15 == 21
 C: 1010, 1011, and 1001101 is equivalent to 10 + 11 + 77 == 98
 D: 1010, 1011, and 1000000 is equivalent to 10 + 11 + 64 == 85
 E: 111, 111, and 111 is equivalent to 7 + 7 + 7 == 21
