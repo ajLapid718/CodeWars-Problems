@@ -2,7 +2,9 @@ Link: https://www.codewars.com/kata/high-stakes-binary-blackjack
 
 # Description
 
-Binary blackjack is a game that adopts some, but not all, of the rules and objectives from the standard blackjack card game. This is a high-stakes game by nature. Therefore, some of the rules are a bit extreme, making it slightly more difficult for participants at the table to cheat or calculate the risk. It comes down to whether they are lucky or unlucky.
+Binary blackjack is a game that adopts some, but not all, of the rules and objectives from the standard blackjack card game. This is a high-stakes game by nature. Therefore, some of the rules are a bit extreme, making it slightly more difficult for participants at the table to cheat or calculate the risk. It comes down to whether a person is lucky or unlucky.
+
+Unfortunately, the players cannot read binary numbers. Fortunately, there are people available to help them out.
 
 There will be two decks the dealer will deal from. One deck (X) contains cards with values from 1 up to and including 11. The other deck (Y) contains cards with values from 1 up to and including 100.
 
@@ -12,7 +14,7 @@ One twist involves the values of the cards. The cards are written in an integer'
 
 From there, another twist unfolds. The player has to figure out if his or her hand results in: Classic Blackjack!, Remixed Blackjack!, Super Blackjack!, Bust!, 21! or Unlucky!
 
-- A hand that achieves the outcome of Classic Blackjack! means that the first two cards of the hand have added up to the value of 21 the way it is calculated in traditional blackjack, with a 10 and an 11. This can only happen in a two-card hand. Again, this can only occur in a two-card hand.
+- A hand that achieves the outcome of Classic Blackjack! means that the first two cards of the hand have added up to the value of 21 the way it is calculated in traditional blackjack, with a 10 and an 11. This can only happen in a two-card hand, much like the way it happens in traditional blackjack.
 
 - A hand that achieves the outcome of Remixed Blackjack! means that the first two cards of the hand have added up to the value of 21 in a way that differs from the classical way.
 
