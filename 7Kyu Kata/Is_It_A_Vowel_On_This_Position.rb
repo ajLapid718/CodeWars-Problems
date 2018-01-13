@@ -1,4 +1,4 @@
-# Check if it is a vowel(a, e, i, o, u,) on the n position in a string (the first argument). Don't forget about uppercase.
+# Check if it is a vowel(a, e, i, o, u) on the n position in a string (the first argument). Don't forget about uppercase.
 
 # A few cases:
 
