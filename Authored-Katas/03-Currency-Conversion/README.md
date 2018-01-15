@@ -10,13 +10,17 @@ However, there is one minor issue to deal with first. The screens and monitors a
 
 You make some observations. If a country's currency begins with a vowel, then the conversion rate is unaffected by the technical difficulties. If a country's currency begins with a consonant, then the conversion rate has been tampered with.
 
-Normally, the display would show 1 USD converting to 111 Japanese Yen. Instead, the display is showing 1 USD converts to 1101111 Japanese Yen. You take it upon yourself to sort this out in order to get an accurate conversion.
+Normally, the display would show 1 USD converting to 111 Japanese Yen. Instead, the display is showing 1 USD converts to 1101111 Japanese Yen. You take it upon yourself to sort this out. By doing so, your 250 USD rightfully becomes 27750 Japanese Yen.
 
-```
-function(1, "Japanese Yen") => "You now have 111 of Japanese Yen."
-function(10, "Japanese Yen") => You now have 1110 of Japanese Yen."
-function(100, "Japanese Yen") => "You now have 11100 of Japanese Yen."
-```
+`
+function(250, "Japanese Yen") => "You now have 27750 of Japanese Yen."
+`
+
+Normally, the display would show 1 USD converting to 21 Czech Koruna. Instead, the display is showing 1 USD converts to 10101 Czech Koruna. You take it upon yourself to sort this out. By doing so, your 325 USD rightfully becomes 6825 Czech Koruna.
+
+`
+function(325, "Czech Koruna") => "You now have 6825 of Czech Koruna."
+`
 
 Using your understanding of converting currencies in conjunction with the preloaded code shown below, properly convert your dollars into the correct amount of foreign currency.
 
