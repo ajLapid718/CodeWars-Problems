@@ -22,7 +22,7 @@ function digitsAverage(num) {
     arr.push(Math.round((numArr[i] + numArr[i+1])/2))
   }
 
-  var newNum = parseInt(arr.map(num => num.toString()).join(''))
+  var newNum = parseInt(arr.join(''));
 
   return digitsAverage(newNum)
 }
