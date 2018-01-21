@@ -57,7 +57,7 @@ CONVERSION_RATES = {
 
 ![Sample Tests](/Misc/03-Example-Tests.PNG)
 
-- [ ] Supports multiple programming languages
+- [x] Supports multiple programming languages
 - [x] Contains more than one-hundred test cases
 - [x] Provides example test cases for the user
 - [x] Randomizes test cases per user submission
