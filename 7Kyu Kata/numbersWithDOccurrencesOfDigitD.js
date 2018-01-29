@@ -15,6 +15,7 @@ Your task is to implement a function called is_dd (isDd in javascript) that take
 */
 
 // My Solution
+
 function isDd(num) {
   var dictionary = {};
   var stringifiedNum = num.toString();
