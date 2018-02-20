@@ -1,6 +1,8 @@
 /*
 
-Math geeks and computer nerds love to anthropomorphize numbers and assign emotions and personalities to them. Thus there is defined the concept of a “happy” number. A happy number is defined as an integer in which the following sequence ends with the number 1.
+Math geeks and computer nerds love to anthropomorphize numbers and assign emotions and personalities to them.
+Thus there is defined the concept of a “happy” number.
+A happy number is defined as an integer in which the following sequence ends with the number 1.
 
 1: Start with the number itself.
 2: Calculate the sum of the square of each individual digit.
@@ -28,7 +30,7 @@ function happyNumbers(x) {
 
   for (var i = 1; i <= x; i++) {
     var currentNum = i;
-		var digits = getDigitsOfNum(currentNum);
+    var digits = getDigitsOfNum(currentNum);
     var sums = [];
 
     while(true) {
