@@ -6,7 +6,10 @@ A happy number is defined as an integer in which the following sequence ends wit
 
 1: Start with the number itself.
 2: Calculate the sum of the square of each individual digit.
-3: If the sum is equal to 1, then the number is happy. If the sum is not equal to 1, then repeat steps 1 and 2. A number is considered unhappy once the same number occurs multiple times in a sequence because this means there is a loop and it will never reach 1. For example, the number 7 is a “happy” number:
+3: If the sum is equal to 1, then the number is happy.
+If the sum is not equal to 1, then repeat steps 1 and 2.
+A number is considered unhappy once the same number occurs multiple times in a sequence because this means there is a loop and it will never reach 1.
+For example, the number 7 is a “happy” number:
 4: 7 ^ 2 = 49
 5: 4 ^ 2 + 9 ^ 2 = 97
 6: 9 ^ 2 + 7 ^ 2 = 130
@@ -31,7 +34,7 @@ function happyNumbers(x) {
   for (var i = 1; i <= x; i++) {
     var currentNum = i;
     var digits = getDigitsOfNum(currentNum);
-    var sums = [];
+    var sums = {};
 
     while(true) {
       var temp = [];
@@ -41,15 +44,15 @@ function happyNumbers(x) {
         temp.push(squareNum(currentDigit));
       }
 
-      var sum = temp.reduce((a,b) => a + b);
+      var sum = addSquares(temp);
 
       if (sum === 1) {
           targets.push(currentNum);
           break;
-      } else if (sums.includes(sum)) {
+      } else if (sums[sum]) {
           break;
       } else {
-          sums.push(sum);
+          sums[sum] = true;
           digits = getDigitsOfNum(sum);
       }
     }
@@ -58,10 +61,14 @@ function happyNumbers(x) {
   return targets;
 }
 
+function getDigitsOfNum(num) {
+  return num.toString().split("");
+}
+
 function squareNum(num) {
   return parseInt(num) * parseInt(num);
 }
 
-function getDigitsOfNum(num) {
-  return num.toString().split("");
+function addSquares(arr) {
+  return arr.reduce((a,b) => a + b);
 }
