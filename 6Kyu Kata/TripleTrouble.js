@@ -23,7 +23,7 @@ function tripledouble(num1, num2) {
   num1 = num1.toString();
   num2 = num2.toString();
 
-  let trips = [];
+  let trips = {};
 
   for (let i = 0; i < num1.length - 2; i++) {
     let curr = num1[i];
@@ -31,26 +31,18 @@ function tripledouble(num1, num2) {
     let after = num1[i+2];
 
     if (curr === folo && curr === after) {
-      trips.push(curr.repeat(3));
+      trips[curr.repeat(3)] = true;
     }
   }
-
-  let dubs = {};
 
   for (let j = 0; j < num2.length - 1; j++) {
     let curr = num2[j];
     let folo = num2[j+1];
 
     if (curr === folo) {
-      dubs[curr.repeat(3)] = 1;
-    }
-  }
-
-  for (let k = 0; k < trips.length; k++) {
-    let currentNum = trips[k];
-
-    if (dubs[currentNum]) {
-      return 1;
+      if (trips[curr.repeat(3)]) {
+        return 1;
+      }
     }
   }
 
