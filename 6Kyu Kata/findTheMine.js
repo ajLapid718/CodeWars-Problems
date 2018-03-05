@@ -18,6 +18,8 @@ mineLocation( [ [0, 0, 0], [0, 0, 0], [0, 1, 0] ] ) => returns [2, 1]
 
 */
 
+// My First Approach
+
 function mineLocation(field) {
   let width = field[0].length;
   let locations = [];
@@ -35,4 +37,16 @@ function mineLocation(field) {
       return [row, column];
     }
   }
+}
+
+// My Second Approach
+
+function mineLocation(field) {
+  let width = field[0].length;
+  let indexOfMine = Math.floor(field.toString().indexOf('1') / 2);
+  
+  let row = Math.floor(indexOfMine / width);
+  let column = indexOfMine % width;
+
+  return [row, column];
 }
