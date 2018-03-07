@@ -51,7 +51,7 @@ function countAdjacentPairs(searchString) {
     let curr = words[i];
     let folo = words[i+1];
 
-    if (arr[0] === curr) {
+    if (arr[0] === curr || curr === ' ') {
       continue;
     }
 
