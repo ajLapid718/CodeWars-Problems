@@ -15,13 +15,9 @@ function twins(myArray) {
     obj[num] = obj[num] + 1 || 1;
   }
 
-  let frequencies = [];
-
   for (let key in obj) {
     let val = obj[key];
-    if (val !== 2) {
-      return false;
-    }
+    if (val !== 2) { return false };
   }
 
   return true;
