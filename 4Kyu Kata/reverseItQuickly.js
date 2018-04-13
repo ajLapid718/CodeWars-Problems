@@ -25,8 +25,8 @@ X: Array.prototype.sort(callback) can be used to sort an array in ascending orde
     This causes the built-in (under-the-hood) comparator function to place "element a" in a higher index than "element b"; // (7 - 6) === 1;
 
 Y: Array.prototype.sort can be used to sort an array in descending order ===> arr.sort((a,b) => b - a);
-If b - a (2 - 1) returns a negative number (aka b is greater than a) then "element b" is placed in a lower index than "element a"; // (2 - 1) === -1
-If b - a (6 - 7) returns a positive number (aka b is greater than a) then "element b" is placed in a higher index than "element a"; // (6 - 7) === 1;
+If b - a (6 - 7) returns a negative number (aka b is less than a) then "element b" is placed in a higher index than "element a"; // (6 - 7) === -1;
+If b - a (2 - 1) returns a positive number (aka b is greater than a) then "element b" is placed in a lower index than "element a"; // (2 - 1) === 1
 
 The important takeaways summarized:
 In both example X and example Y, if a is equal to b, then a 0 is returned and nothing changes in terms of order or sorting;
