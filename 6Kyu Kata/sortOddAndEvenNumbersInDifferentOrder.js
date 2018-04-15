@@ -35,10 +35,10 @@ function sortArray(array) {
     let evenNum = evens[k];
 
     if (array[i] % 2 === 0) {
-      arr.push(evenNum); // Shift would've helped improved space complexity;
+      arr.push(evenNum); // Shift would've helped improve space complexity;
       k += 1;
     } else {
-      arr.push(oddNum); // Shift would've helped improved space complexity;
+      arr.push(oddNum); // Shift would've helped improve space complexity;
       j += 1;
     }
   }
