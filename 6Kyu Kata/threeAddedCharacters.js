@@ -34,6 +34,7 @@ Collapse 'Test cases' or scroll down to the end of the test cases to see your co
 
 */
 
+// My initial solution;
 function addedChar(s1, s2) {
   let objOne = {};
   let objTwo = {};
@@ -51,4 +52,23 @@ function addedChar(s1, s2) {
   for (let key in objTwo) {
     if (objOne[key] !== objTwo[key]) return key;
   }
+}
+
+// My alternate solution using the XOR operator;
+function addedChar(s1, s2) {
+  let allLetters = s1 + s2;
+  let charCodes = allLetters.split('').map(letter => letter.charCodeAt());
+  let targetCharCode = charCodes.reduce((a,b) => a ^ b);
+  return String.fromCharCode(targetCharCode);
+}
+
+// A solution provided by a Codewars user who implemented the bitwise NOT operator;
+function addedChar(s1, s2) {
+  let ascii = 0;
+
+  for (let i = 0; i < s2.length; i++) {
+    ascii += (s2.charCodeAt(i) - ~~s1.charCodeAt(i));
+  }
+
+  return String.fromCharCode(ascii/3);
 }
