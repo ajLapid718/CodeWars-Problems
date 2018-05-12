@@ -37,11 +37,11 @@ function moveTen(s) {
     let ascii = letter.charCodeAt();
 
     if (ascii >= 97 && ascii <= 112) {
-      res += String.fromCharCode(code + 10);
+      res += String.fromCharCode(ascii + 10);
     }
 
     if (ascii >= 113 && ascii <= 122) {
-      res += String.fromCharCode((code - 26) + 10);
+      res += String.fromCharCode((ascii - 26) + 10);
     }
   }
 
