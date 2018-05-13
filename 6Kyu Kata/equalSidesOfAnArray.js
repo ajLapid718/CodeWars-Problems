@@ -35,6 +35,7 @@ An empty array should be treated like a 0 in this problem.
 
 */
 
+// One way with auxillary space and a bit more computations;
 function findEvenIndex(arr) {
   if (arr.length === 0) return 0;
 
@@ -57,6 +58,33 @@ function findEvenIndex(arr) {
   for (let idx in left) {
     if (left[idx] === right[idx]) {
       return Number(idx);
+    }
+  }
+
+  return -1;
+}
+
+// Alternatively;
+
+function findEvenIndex(arr) {
+  if (arr.length === 0) return 0;
+
+  let sum = 0;
+  let leftSum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    sum += num;
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    let rightSum = sum - leftSum - num;
+    if (leftSum === rightSum) {
+      return i;
+    }
+    else {
+      leftSum += num;
     }
   }
 
