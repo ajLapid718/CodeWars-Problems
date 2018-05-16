@@ -23,7 +23,7 @@ function findUniq(arr) {
     obj[letter] = obj[letter] + 1 || 1;
   }
 
-  let minAmount = Math.min.apply(Object.keys(obj));
+  let minAmount = Infinity;
 
   for (let key in obj) {
     if (obj[key] <= minAmount) {
