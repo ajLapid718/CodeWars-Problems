@@ -24,19 +24,12 @@ function findUniq(arr) {
   }
 
   let minAmount = Infinity;
-
-  for (let key in obj) {
-    if (obj[key] <= minAmount) {
-      minAmount = obj[key];
-    }
-  }
-
   let targetLetter;
 
   for (let key in obj) {
-    if (obj[key] === minAmount) {
+    if (obj[key] < minAmount) {
+      minAmount = obj[key];
       targetLetter = key;
-      break;
     }
   }
 
