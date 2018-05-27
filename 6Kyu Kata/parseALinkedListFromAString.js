@@ -70,7 +70,6 @@ function parse(string) {
   let head = new Node(vals[0]);
   let currNode = head;
 
-
   while (idx < vals.length - 2) {
     currNode.next = new Node(vals[idx+1]);
     currNode = currNode.next;
