@@ -22,7 +22,7 @@ function invalidNum(n) {
   let strNum = n.toString();
   let digits = strNum.split('');
   let sortedDigits = +digits.sort((a,b) => b - a).join('');
-  return sortedDigits === n ? -1 : false;
+  return sortedDigits === n;
 }
 
 function helper(n) {
