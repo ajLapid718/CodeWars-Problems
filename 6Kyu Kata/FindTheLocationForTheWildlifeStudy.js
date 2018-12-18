@@ -69,12 +69,12 @@ function findTheLocation(str) {
     if (difference <= upperBoundIdx) low = partition + 1;
   }
 
-  let temp = [];
+  let targetWords = [];
 
   while (low <= upperBoundIdx) {
-    temp.push(words[low]);
+    targetWords.push(words[low]);
     low++;
   }
 
-  return temp.join(' ').trim();
+  return targetWords.join(' ').trim();
 }
