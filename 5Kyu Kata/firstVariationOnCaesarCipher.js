@@ -88,11 +88,13 @@ function movingShift(str, key) {
 
     for (let j = 0; j < currStr.length; j++) {
       let currLetter = currStr[j];
+
       if (!isLowerCase(currLetter) && !isUpperCase(currLetter)) {
         temp += currLetter;
         key++;
         continue;
       }
+
       let asciiValOfLetter = currLetter.charCodeAt();
       let shiftedLetterAsciiVal = asciiValOfLetter + (key % 26);
 
@@ -172,5 +174,5 @@ function isUpperCase(character) {
 }
 
 function isLowerCase(character) {
-  return character.charCodeAt() >= 96 && character.charCodeAt() <= 122;
+  return character.charCodeAt() >= 97 && character.charCodeAt() <= 122;
 }
